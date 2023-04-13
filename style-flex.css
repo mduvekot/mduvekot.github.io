@@ -1,0 +1,52 @@
+.flex-container {
+	display:flex;
+flex-direction: row; /*left to right */
+	flex-wrap: wrap; /* all items on one line */
+	justify-content: space-around; /* evenly distributed in the line with equal space around them */
+	align-items: flex-start; /* items are placed at the start of the cross axis. */
+	align-content: space-around; /* items evenly distributed with equal space around each line */
+	row-gap: 10px; /* space between flex items */
+	column-gap: 10px; /* space between flex items */
+}
+
+.flex-item {
+	order: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	align-self: stretch; /* make all columns the same height*/
+ } 
+.flex-item > p {
+	padding: 12px;
+}
+#item1 {
+	width: 200px;
+	flex-grow: 2; /* item one can become twice as wide as items 2 and 3*/
+	flex-shrink: 2;  /* item one can become twice as narrow as items 2 and 3*/
+	background-color: Skyblue;
+}
+#item2 {
+	width: 300px;
+	flex-grow: 2;
+	flex-shrink: 2;
+	background-color: Steelblue;
+}
+#item3 {
+	width: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: CornflowerBlue;
+}
+.flex-item > h2 {
+/* the headings inside a flex column are over a brighter background than the colum itself */
+	position:relative;
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-left: 20px;
+	
+	background-color:rgba(255, 255, 255, .5);
+	height: 2.8rem;
+}
+
+h1 {
+	text-align:center;
+}
